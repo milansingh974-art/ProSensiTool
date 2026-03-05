@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="mFtfADogM72NRYd-HxyuEQ8gGAyGGNuS3jGOJXSSou8" />
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7584739829246988"
-crossorigin="anonymous"></script>
-    <title>Pro Sensi Tool - Free Fire Headshot Sensitivity Generator</title>
-<meta name="description" content="Best Free Fire Headshot Sensitivity Tool for all devices. Generate perfect FF sensitivity easily.">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7584739829246988"
+     crossorigin="anonymous"></script>
+    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FF Paid Sensi Tool v6.0 - 200 Range</title>
+    <meta name="description" content="Best Free Fire Headshot Sensitivity Tool for all devices. Generate perfect FF sensitivity easily.">
+    <title>Pro Sensi Tool - Free Fire Headshot Sensitivity Generator</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    
     <style>
         :root { --neon: #00ffcc; --gold: #ffcc00; --bg: #050505; --card: #121212; }
         body { font-family: 'Rajdhani', sans-serif; background: var(--bg); color: white; margin: 0; padding: 15px; text-align: center; }
         .main-card { max-width: 500px; margin: auto; background: var(--card); border: 2px solid #222; border-radius: 25px; padding: 25px; box-shadow: 0 0 50px rgba(0, 255, 204, 0.1); }
         h1 { font-family: 'Orbitron', sans-serif; color: var(--neon); text-transform: uppercase; font-size: 24px; text-shadow: 0 0 15px var(--neon); }
         .badge { background: #ff0055; color: white; font-size: 12px; padding: 3px 10px; border-radius: 50px; vertical-align: middle; }
-        
         select { width: 100%; padding: 15px; margin: 10px 0; border-radius: 12px; border: 1px solid #333; background: #1a1a1a; color: white; font-size: 16px; font-weight: bold; }
         .btn-premium { background: linear-gradient(45deg, #00ffcc, #0099ff); color: black; border: none; padding: 18px; width: 100%; border-radius: 15px; font-weight: 800; cursor: pointer; font-size: 18px; margin-top: 15px; box-shadow: 0 5px 20px rgba(0, 255, 204, 0.3); transition: 0.3s; }
         .btn-premium:hover { transform: scale(1.03); filter: brightness(1.2); }
-
         #result { display: none; margin-top: 30px; animation: slideUp 0.5s ease; text-align: left; }
         @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-
         .sensi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px; }
         .item { background: #1a1a1a; padding: 15px; border-radius: 15px; border-bottom: 3px solid var(--neon); }
         .label { font-size: 14px; color: #888; display: block; }
         .val { font-size: 24px; color: var(--neon); font-weight: 900; font-family: 'Orbitron'; }
-        
         .secret-box { background: rgba(255, 204, 0, 0.1); border: 1px dashed var(--gold); padding: 15px; border-radius: 15px; margin-top: 20px; color: var(--gold); }
         .ads-box { height: 100px; background: #111; border-radius: 10px; margin: 20px 0; display: flex; align-items: center; justify-content: center; border: 1px solid #222; color: #444; font-size: 12px; }
     </style>
@@ -80,39 +82,24 @@ crossorigin="anonymous"></script>
 function getSensi() {
     let ram = document.getElementById('ram').value;
     let range = document.getElementById('range').value;
-    
-    // Default 200 scale values
+
     let d = { g: 185, r: 190, s2: 175, s4: 165, f: "45%", dpi: "411", t: "" };
 
-    if(ram === "2-3") {
-        d.g = 199; d.r = 195; d.s2 = 185; d.s4 = 180; d.f = "42%"; d.dpi = "520";
-        d.t = "Low RAM mein pixel-skipping bachane ke liye exactly 200 mat rakhna, 199 best hai.";
-    } else if(ram === "4-6") {
-        d.g = 185; d.r = 175; d.s2 = 160; d.s4 = 155; d.f = "48%"; d.dpi = "450";
-        d.t = "Smooth drag ke liye Fire button ko thoda niche place karein.";
-    } else if(ram === "8+") {
-        d.g = 145; d.r = 140; d.s2 = 130; d.s4 = 120; d.f = "52%"; d.dpi = "Standard";
-        d.t = "High-end devices mein in-built sensi jyada hoti hai, 200 rakhoge toh recoil hoga.";
-    } else if(ram === "ios") {
-        d.g = 95; d.r = 90; d.s2 = 85; d.s4 = 85; d.f = "38%"; d.dpi = "Not Needed";
-        d.t = "iPhone ke liye purana scale hi best hai (100 tak), isme 200 ki zarurat nahi.";
-    }
+    if(ram === "2-3") { d.g=199; d.r=195; d.s2=185; d.s4=180; d.f="42%"; d.dpi="520"; d.t="Low RAM mein pixel-skipping bachane ke liye exactly 200 mat rakhna, 199 best hai."; }
+    else if(ram === "4-6") { d.g=185; d.r=175; d.s2=160; d.s4=155; d.f="48%"; d.dpi="450"; d.t="Smooth drag ke liye Fire button ko thoda niche place karein."; }
+    else if(ram === "8+") { d.g=145; d.r=140; d.s2=130; d.s4=120; d.f="52%"; d.dpi="Standard"; d.t="High-end devices mein in-built sensi jyada hoti hai, 200 rakhoge toh recoil hoga."; }
+    else if(ram === "ios") { d.g=95; d.r=90; d.s2=85; d.s4=85; d.f="38%"; d.dpi="Not Needed"; d.t="iPhone ke liye purana scale hi best hai (100 tak), isme 200 ki zarurat nahi."; }
 
-    // Range Adjustment
-    if(range === "close") {
-        d.g = Math.min(200, parseInt(d.g) + 5);
-        d.f = "40%";
-    }
+    if(range==="close"){ d.g=Math.min(200, parseInt(d.g)+5); d.f="40%"; }
 
-    document.getElementById('gen').innerText = d.g;
-    document.getElementById('red').innerText = d.r;
-    document.getElementById('s2x').innerText = d.s2;
-    document.getElementById('s4x').innerText = d.s4;
-    document.getElementById('fbtn').innerText = d.f;
-    document.getElementById('dpi').innerText = d.dpi;
-    document.getElementById('tip').innerText = d.t;
-
-    document.getElementById('result').style.display = 'block';
+    document.getElementById('gen').innerText=d.g;
+    document.getElementById('red').innerText=d.r;
+    document.getElementById('s2x').innerText=d.s2;
+    document.getElementById('s4x').innerText=d.s4;
+    document.getElementById('fbtn').innerText=d.f;
+    document.getElementById('dpi').innerText=d.dpi;
+    document.getElementById('tip').innerText=d.t;
+    document.getElementById('result').style.display='block';
 }
 </script>
 </body>
